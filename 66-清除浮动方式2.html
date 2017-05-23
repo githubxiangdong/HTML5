@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>66-清除浮动方式2.html</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box1{
+            background-color: red;
+        }
+        .box2{
+            background-color: green;
+            clear: both;
+            margin-top: 10px;
+        }
+        .box1 p{
+            width: 100px;
+            background-color: blue;
+        }
+        .box2 p{
+            width: 100px;
+            background-color: cyan;
+        }
+        p{
+            float: left;
+        }
+        .dd{
+            width: 500px;
+            height: 500px;
+            background-color: red;
+            border: 1px solid #000;
+        }
+        .ddd{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+<!--
+1, 清除浮动方式1
+给前面一个父元素设置高度
+
+注意点:
+在企业开发中,能不写高度就不写高度
+
+2, 清除浮动的第二种方式
+给后边的盒子添加clear属性
+clear属性取值:
+none:
+left:
+right:
+both:
+
+注意点:
+当某个盒子里面添加了clear属性后,margin属性就会失效
+-->
+<!--
+<div class="box1">
+    <p>我是文字1</p>
+    <p>我是文字1</p>
+    <p>我是文字1</p>
+</div>
+<div class="box2">
+    <p>我是文字2</p>
+    <p>我是文字2</p>
+    <p>我是文字2</p>
+</div>
+-->
+<div class="dd">
+    <div class="ddd"></div>
+</div>
+</body>
+</html>
