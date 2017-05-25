@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>67-清楚浮动3.html</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .box1{
+            background-color: red;
+            /*margin-bottom: 10px;*/
+        }
+        .box2{
+            background-color: green;
+            /*margin-top: 10px;*/
+        }
+        .box1 p{
+            width: 100px;
+            background-color: blue;
+        }
+        .box2 p{
+            width: 100px;
+            background-color: cyan;
+        }
+        p{
+            float: left;
+        }
+        .wall{
+            clear: both;
+        }
+        .h20{
+            height: 20px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<!--
+    1. 清楚浮动的第三种方式
+    1> 隔墙法:
+
+    2> 外墙发:
+    2.1 给两个盒子中间添加一个额外的块级元素
+    2.2 给这个额外添加的块级元素设置clear: both; 属性
+    注意点:
+    外墙发可以让第二个盒子使用margin-top的属性
+    外墙发不可以让第一个盒子使用margin-bottom属性
+
+    3> 内墙发
+    3.1 给第一个盒子中所有子元素添加一个额外的块级元素
+    3.2 给这个额外添加的块级元素设置clear: both; 属性
+    注意点:
+    内墙法可以让第二个盒子使用margin-top的属性
+    内墙法也可以让第一个盒子使用margin-bottom属性
+    在企业开发中,常常是在内墙法中的块级元素上添加一个类名,利用设置新增的类名的高度,来完成两个盒子之间的间距
+
+    4> 外墙法和内枪法的区别?
+    4.1 内墙法可以撑起第一个盒子的高度,外墙发不可以撑起盒子的高度
+
+    5> 企业开发中内墙法和外墙法是不常用的,违背了样式和结构分离的原则
+-->
+
+<div class="box1">
+    <p>我是文字1</p>
+    <p>我是文字1</p>
+    <p>我是文字1</p>
+
+    <div class="wall h20"></div>
+</div>
+
+<!--<div class="wall h20"></div> // 一个盒子可以有很多类名-->
+
+<div class="box2">
+    <p>我是文字2</p>
+    <p>我是文字2</p>
+    <p>我是文字2</p>
+</div>
+
+
+</body>
+</html>

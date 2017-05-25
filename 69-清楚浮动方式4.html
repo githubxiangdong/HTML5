@@ -2,22 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>66-清除浮动方式2.html</title>
+    <title>69-清楚浮动方式4.html</title>
     <style>
         *{
             margin: 0px;
             padding: 0px;
         }
-        body{
-            border: 1px solid #000;
-        }
+
         .box1{
             background-color: red;
         }
         .box2{
             background-color: green;
-            clear: both;
-            margin-top: 25px;
         }
         .box1 p{
             width: 100px;
@@ -30,56 +26,39 @@
         p{
             float: left;
         }
-        /*
-        .dd{
-            width: 500px;
-            height: 500px;
-            background-color: red;
-            border: 1px solid #000;
-        }
-        .ddd{
+        .box1::after{
+            /*设置添加子元素的内容为空*/
+            content: "";
+            /*设置添加子元素为块级元素*/
+            display: block;
+            /*设置添加的子元素的宽度*/
             width: 100px;
-            height: 100px;
+            /*设置添加的子元素的高度*/
+            height: 10px;
+            /*设置添加的子元素的背景颜色*/
             background-color: green;
-            margin-top: 100px;
-        }*/
+            /*设置添加的子元素看不见*/
+            visibility: hidden;
+            /*给添加的子元素设置clear:both; 清楚左右浮动*/
+            clear: both;
+        }
+        .box1{
+            /*利用为元素构造器清楚浮动不兼容ie6的解决方法 兼容ie6的*/
+            *zoom: 1;
+        }
     </style>
 </head>
 <body>
-<!--
-1, 清除浮动方式1
-给前面一个父元素设置高度
-
-注意点:
-在企业开发中,能不写高度就不写高度
-
-2, 清除浮动的第二种方式
-给后边的盒子添加clear属性
-clear属性取值:
-none:
-left:
-right:
-both:
-
-注意点:
-当某个盒子里面添加了clear属性后,margin属性就会失效
--->
-
 <div class="box1">
     <p>我是文字1</p>
     <p>我是文字1</p>
     <p>我是文字1</p>
 </div>
+
 <div class="box2">
     <p>我是文字2</p>
     <p>我是文字2</p>
     <p>我是文字2</p>
 </div>
-
-<!--
-<div class="dd">
-    <div class="ddd"></div>
-</div>
--->
 </body>
 </html>
