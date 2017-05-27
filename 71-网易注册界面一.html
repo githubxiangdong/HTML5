@@ -4,15 +4,23 @@
     <meta charset="UTF-8">
     <title>71-网易注册界面一.html</title>
     <style>
+        /*清空默认边距*/
         body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
             margin:0;
             padding:0
         }
+        /*清空默认样式*/
         a{
             /*设置超级链接的下划线为不显示*/
             text-decoration: none;
             font-size: 12px;
             color: #ccc;
+        }
+        /*利用body设置整个界面的信息 文字的大小 文字的字体 文字的颜色*/
+        body{
+            font-size: 12px;
+            font-family: "宋体";
+            color: #333;
         }
         .header{
             width: 960px;
@@ -189,12 +197,18 @@
         .footer{
             width: 960px;
             height: 48px;
-            background-color: cyan;
             margin: 0 auto;
+        }
+        .footer p{
+            font-size: 12px;
+            color: #cccccc;
+            text-align: center;
+            line-height: 48px;
         }
     </style>
 </head>
 <body>
+<!--头部的开始-->
 <div class="header">
     <div class="logo">
         <a href="#" title="网易163免费邮"></a><a href="#" title="网易126免费邮"></a><a href="#" title="网易Yeah.net免费邮"></a>
@@ -205,6 +219,9 @@
         <a href="#">反馈意见</a>
     </div>
 </div>
+<!--头部的结束-->
+
+<!--内容的开始-->
 <div class="body">
     <div class="top">
         <div class="left">
@@ -281,6 +298,19 @@
         </div>
     </div>
 </div>
-<div class="footer"></div>
+<!--内容的结束-->
+
+<!--底部的开始-->
+<div class="footer">
+    <p>
+        <a href="#">关于网易</a>
+        <a href="#">关于网易免费邮</a>
+        <a href="#">邮箱官方博客</a>
+        <a href="#">客户服务</a>
+        <a href="#">隐私政策</a>
+        |  网易公司版权所有 © 1997-2017
+    </p>
+</div>
+<!--底部的结束-->
 </body>
 </html>

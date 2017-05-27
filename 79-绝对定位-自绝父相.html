@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>97-绝对定位-自绝父相.html</title>
+    <title>79-绝对定位-自绝父相.html</title>
     <style>
         *{
             margin: 0;
@@ -17,7 +17,7 @@
         }
         ul li{
             float: left;
-            width: 100px;
+            width: 150px;
             line-height: 50px;
             text-align: center;
             background-color: #ccc;
@@ -47,9 +47,11 @@
 
             /*
                 子绝父相: 子元素用绝对定位,父元素用相对定位
+                要让
             */
             position: absolute;
-            left: 35px;
+            left: 50%;
+            margin-left: -15px;
             top: -5px;
         }
 

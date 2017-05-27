@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>80-绝对定位水平居中问题.html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 300px;
+            height: 50px;
+            background-color: red;
+            position: absolute;
+            left: 50%;
+            margin-left: -150px;
+        }
+    </style>
 </head>
 <body>
-$END$
+<!--
+    如何让绝对定位的元素水平居中?
+    只需设置绝对定位元素的left:50%
+    然后设置绝对定位元素的margin-left:元素宽度的一半px;
+-->
+<div></div>
 </body>
 </html>

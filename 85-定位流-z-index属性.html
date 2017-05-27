@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>85-定位流-z-index属性.html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+        }
+        /*
+        .box1{
+            background-color: red;
+            position: relative;
+            top: 0;
+            left: 0;
+        }
+        .box2{
+            background-color: green;
+            position: absolute;
+            top: 50px;
+            left: 50px;
+        }
+        .box3{
+            background-color: blue;
+            position: fixed;
+            top: 100px;
+            left: 100px;
+        }*/
+        .father1{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            position: relative;
+            z-index: 1;
+        }
+        .son1{
+            width: 50px;
+            height: 50px;
+            background-color: green;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+            z-index: 3;
+        }
+        .father2{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            position: relative;
+            z-index: 2;
+        }
+        .son2{
+                           width: 50px;
+                           height: 50px;
+                           background-color: cyan;
+                           position: absolute;
+                           left: 130px;
+                           top: 30px;
+                           z-index: 4;
+        }
+    </style>
+</head>
+<body>
+<!--
+    1, 什么是z-index 属性?
+    默认情况下,所有元素都有一个默认的z-index属性,取值是0。
+    z-index的作用是,专门用于控制定位流元素的覆盖关系
+
+    1, 默认情况下,定位流元素会盖住标准流的元素
+    2, 默认情况下,定位流元素后面的元素会盖住前面的元素
+    3, 如果定位流的元素设置z-index属性,那么谁的z-index大,谁就在上面
+
+    注意点:
+    1, 从父现象
+    1.1 如果两个字元素的父元素没有设置z-index属性,那么两个子元素的z-index属性谁的大就显示在上面
+    1.2 如果两个子元素的父元素都设置了z-index属性,那么两个子元素的z-index属性就会失效,就会根据父元素的z-index的值来决定,谁的大就显示在上面
+-->
+<!--
+<div class="box1"></div>
+<div class="box2"></div>
+<div class="box3"></div>-->
+<div class="father1">
+    <div class="son1"></div>
+</div>
+<div class="father2">
+    <div class="son2"></div>
+</div>
+</body>
+</html>

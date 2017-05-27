@@ -2,9 +2,40 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>77-绝对定位的参考点.html</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .box1{
+            width: 300px;
+            height: 300px;
+            background-color: red;
+            position: absolute;
+        }
+        .box2{
+             width: 100px;
+             height: 100px;
+             background-color: green;
+             position: absolute;
+             top: 0;
+             right: 0;
+         }
+    </style>
 </head>
 <body>
-$END$
+<!--
+1, 规律
+1.1 默认情况下所有的绝对定位的元素,无论有没有祖先元素,都会以body作为参考点的
+1.2 如果绝对定位的元素有祖先元素,并且祖先元素是定位流,那么绝对定位元素的位置就会以祖先元素为参考点
+    1.2.1 只要是这个绝对元素的祖先元素都可以
+    1.2.2 上面的定位流指的是:相对定位、绝对定位、固定定位
+    1.2.3 定位流中只有静态流不可以
+1.3 如果一个绝对定位的元素有祖先元素,并且祖先元素的是定位流,而且祖先元素中有多个元素都是定位流,那么这个绝对定位流元素会议离他最近的那个祖先元素为参考点
+-->
+<div class="box1">
+    <div class="box2"></div>
+</div>
 </body>
 </html>
