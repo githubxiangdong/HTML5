@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>106-3D转换模块.html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .father{
+            width: 300px;
+            height: 300px;
+            margin: 100px auto;
+            border: 1px solid #000;
+            background-color: red;
+            perspective: 500px;
+            /*
+            1, 什么是2d和3d
+            默认情况下，都是2D显示
+            2，如何让某元素是3D展现？
+             和透视（perspective）一样，想看到某个元素的3D效果，只需给这个元素的父元素添加一个transform-style: 的属性，然后设值为presrve-3D即可
+            */
+            transform-style: preserve-3D;
+            transform: rotateY(0deg);
+        }
+        .son{
+            width: 200px;
+            height: 200px;
+            margin: 0 auto;
+            margin-top: 50px;
+            border: 1px solid #000;
+            background-color: blue;
+            transform: rotateY(45deg);
+        }
+    </style>
+</head>
+<body>
+<div class="father">
+    <div class="son"></div>
+</div>
+</body>
+</html>

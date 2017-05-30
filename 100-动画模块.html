@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>100-动画模块.html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            height: 50px;
+            background-color: red;
+            /*transition: all 0.5s;*/
+
+            /*
+            1， 告诉系统需要执行哪个属性
+            */
+            animation-name: lnj;
+            /*3, 动画持续的时长 */
+            animation-duration: 3s;
+        }
+        /* 2, 告诉系统我要创建一个lnj的动画*/
+        @keyframes lnj {
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: 500px;
+            }
+        }
+        /*div:hover{*/
+            /*margin-left: 500px;*/
+        /*}*/
+    </style>
+</head>
+<body>
+<!--
+1, 过渡和动画之间的异同
+1.1 不同点：
+过渡：必须人为的触发才会被执行
+动画：不需要人为的触发就会执行
+1.2 相同点：
+过渡和动画都是还给元素添加的动画的
+过渡和动画是系统新增的一些属性
+过渡和动画都需要满足三要素才会有动画效果
+-->
+<div></div>
+</body>
+</html>

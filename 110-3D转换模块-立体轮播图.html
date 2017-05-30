@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>110-3D转换模块-立体轮播图.html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            perspective: 500px;
+        }
+        ul{
+            width: 200px;
+            height: 200px;
+            box-sizing: border-box;
+            margin: 100px auto;
+            position: relative;
+            transform-style: preserve-3D;
+            transform: rotateY(0deg) rotateX(0deg);
+            animation: sport 5s linear 0s infinite normal;
+        }
+        ul:hover{
+            animation-play-state: paused;
+        }
+        ul li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            font-size: 60px;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        ul li:nth-child(1){
+            background-color: red;
+            /*旋转完后，坐标系就会改变*/
+            transform: rotateX(90deg) translateZ(100px) scale(2, 1);
+        }
+        ul li:nth-child(2){
+            background-color: purple;
+            transform: rotateX(180deg) translateZ(100px) scale(2, 1);
+        }
+        ul li:nth-child(3){
+            background-color: cyan;
+            transform: rotateX(270deg) translateZ(100px) scale(2, 1);
+        }
+        ul li:nth-child(4){
+            background-color: green;
+            transform: rotateX(360deg) translateZ(100px) scale(2, 1);
+        }
+        ul li:nth-child(5){
+            background-color: blue;
+            transform: translate(200px) rotateY(90deg);
+        }
+        ul li:nth-child(6){
+            background-color: yellow;
+            transform: translate(-200px) rotateY(90deg);
+        }
+        ul li img{
+            /*注意点：
+            只要父元素被拉伸了，子元素就会被拉伸*/
+            width: 200px;
+            height: 200px;
+        }
+        @keyframes sport {
+            from{
+                transform: rotateX(0deg);
+            }
+            to{
+                transform: rotateX(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="Images/p1.png" alt=""></li>
+    <li><img src="Images/p2.JPG" alt=""></li>
+    <li><img src="Images/p3.jpg" alt=""></li>
+    <li><img src="Images/p4.png" alt=""></li>
+    <li><img src="Images/p1.png" alt=""></li>
+    <li><img src="Images/p2.JPG" alt=""></li>
+</ul>
+</body>
+</html>

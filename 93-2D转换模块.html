@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>93-2D转换模块.html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 800px;
+            height: 500px;
+            border: 1px solid #cccccc;
+            margin: 0 auto;
+        }
+        ul li{
+            list-style: none;
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            margin: 50px auto;
+            text-align: center;
+            line-height: 50px;
+        }
+        ul li:nth-of-type(2){
+            /*rotate(45deg); 旋转多少度*/
+            transform: rotate(45deg);
+        }
+        ul li:nth-of-type(3){
+            /*水平方向平移100个px*/
+            /*
+            参数一，表示水平方向平移
+            参数二，表示垂直方向移动
+            */
+            transform: translate(100px, 0);
+        }
+        ul li:nth-of-type(4){
+            /*
+           参数一，表示水平方向缩放
+           参数二，表示垂直方向缩放
+           */
+            /*transform: scale(1, 1.5);*/
+            /*表示整体缩放1.5倍*/
+            transform: scale(1.5);
+        }
+        ul li:nth-of-type(5){
+            /*
+            1, 如果需要进行多个转换，那么用空格隔开，
+            2，2D的转换的模块会修改元素的坐标系，所以旋转之后再平移就不是水平平移了
+            */
+            transform: rotate(45deg) translate(100px, 0) scale(1.5);
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>正常的</li>
+    <li>旋转的</li>
+    <li>平移的</li>
+    <li>缩放的</li>
+    <li>综合的</li>
+</ul>
+</body>
+</html>

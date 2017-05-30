@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>95-2D转换模块-旋转轴向.html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            width: 800px;
+            height: 500px;
+            border: 1px solid #cccccc;
+            margin: 0 auto;
+        }
+
+        ul li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            margin: 50px auto;
+            border: 1px solid #cccccc;
+            /*
+             什么是透视的？
+              近大远小
+
+              注意点：
+              一定要注意，透视属性必须要添加到需要呈现近大远小效果的元素的父元素上面
+            */
+            perspective: 500px;
+        }
+        ul li img{
+            width: 200px;
+            height: 200px;
+        }
+        ul li:nth-of-type(1){
+            /* 默认情况下，所有的旋转就是围绕着Z轴旋转*/
+            transform: rotateZ(45deg);
+        }
+        ul li:nth-of-type(2) img{
+            transform: rotateX(60deg);
+        }
+        ul li:nth-of-type(3) img{
+            /*
+            总结：
+            想围绕着哪个轴旋转，就在rotate后加哪个轴即可
+            */
+            transform: rotateY(60deg);
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <li><img src="Images/rotateZ.jpg" alt=""></li>
+    <li><img src="Images/rotateX.jpg" alt=""></li>
+    <li><img src="Images/rotateY.jpg" alt=""></li>
+</ul>
+</body>
+</html>

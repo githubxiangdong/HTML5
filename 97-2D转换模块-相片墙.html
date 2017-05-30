@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>97-2D转换模块-相片墙.html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul{
+            height: 450px;
+            border: 1px solid#cccccc;
+            background-color: hotpink;
+            margin: 100px auto;
+            text-align: center;
+            position: relative;
+        }
+        ul span{
+            width: 200px;
+            line-height: 40px;
+            background-color: cyan;
+            color: white;
+            position: absolute;
+            left: 44% ;
+            top: 0;
+        }
+        ul li img{
+            width: 150px;
+            border: 5px solid #fff;
+            box-sizing: border-box;
+            box-shadow: 0 0 10px;
+        }
+        ul li:nth-of-type(1) img{
+            width: 200px;
+        }
+        ul li:nth-of-type(3) img{
+            width: 250px;
+        }
+        ul li{
+            list-style: none;
+            /*浮动不好控制*/
+            /*float: left;*/
+            display: inline-block;
+            margin-top: 130px;
+            transition: transform 0.5s;
+            position: relative;
+
+        }
+        ul li:nth-of-type(1){
+            transform: rotate(120deg);
+        }
+        ul li:nth-of-type(2){
+            transform: rotate(60deg);
+        }
+        ul li:nth-of-type(3){
+            transform: rotate(0deg);
+        }
+        ul li:nth-of-type(4){
+            transform: rotate(30deg);
+        }
+        ul li:nth-of-type(5){
+            transform: rotate(-30deg);
+        }
+        ul li:hover{
+            transform: scale(1.5);
+            z-index: 1;
+        }
+        ul li:nth-of-type(1):hover{
+            transform: rotate(90deg) scale(1.5);
+        }
+        ul li:nth-of-type(2):hover{
+            transform: rotate(90deg) scale(1.5);
+        }
+        ul li:nth-of-type(3):hover{
+            transform: scale(2);
+        }
+
+    </style>
+</head>
+<body>
+<ul>
+    <span>相册</span>
+    <li><img src="Images/p1.png" alt=""></li>
+    <li><img src="Images/p2.JPG" alt=""></li>
+    <li><img src="Images/p3.jpg" alt=""></li>
+    <li><img src="Images/p4.png" alt=""></li>
+    <li><img src="Images/p5.jpg" alt=""></li>
+</ul>
+</body>
+</html>

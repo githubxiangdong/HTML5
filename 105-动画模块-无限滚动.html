@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>105-动画模块-无限滚动.html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 300px;
+            height: 300px;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+        ul{
+            width: 1200px;
+            height: 300px;
+            background-color: black;
+            animation: move 10s linear 0s infinite normal;
+        }
+
+        ul li{
+            list-style: none;
+            width: 200px;
+            height: 300px;
+            background-color: cyan;
+            border: 1px solid #cccccc;
+            box-sizing: border-box;
+            float: left;
+        }
+        ul li img{
+            width: 200px;
+            height: 300px;
+        }
+        ul:hover{
+            animation-play-state: paused;
+        }
+        ul:hover li{
+            opacity: 0.5;
+        }
+        ul li:hover{
+            opacity: 1;
+        }
+        @keyframes move {
+            from{
+                margin-left: 0;
+            }
+            to{
+                margin-left: -800px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+    <ul>
+        <li><img src="Images/p1.png" alt=""></li>
+        <li><img src="Images/p3.jpg" alt=""></li>
+        <li><img src="Images/p4.png" alt=""></li>
+        <li><img src="Images/p5.jpg" alt=""></li>
+        <li><img src="Images/p1.png" alt=""></li>
+        <li><img src="Images/p3.jpg" alt=""></li>
+    </ul>
+</div>
+
+</body>
+</html>
