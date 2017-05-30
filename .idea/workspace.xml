@@ -2,28 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c201051b-9c29-4862-b002-c1ea72c36f05" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/100-动画模块.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/101-动画模块-其他属性上.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/102-动画模块-其他属性下.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/103-动画模块的连写模式.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/104-动画模块-云层效果.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/105-动画模块-无限滚动.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/106-3D转换模块.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/107-3D转换模块-正方体.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/108-3D转换模块-正方体的终极方案.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/109-3D转换模块-长方形.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/110-3D转换模块-立体轮播图.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/89-过度模块-其他属性.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/90-过度模块简写样式.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/91-过度模块的弹性效果.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/92-过渡模块-手风琴效果.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/93-2D转换模块.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/94-2D转换模块-形变中心点.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/95-2D转换模块-旋转轴向.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/96-2D转换练习.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/97-2D转换模块-相片墙.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/98-盒子阴影和文字阴影.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/99-翻转菜单-菜单练习.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/111-3D播放器.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HTML5.iws" />
@@ -52,16 +31,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
               <caret line="68" column="12" lean-forward="false" selection-start-line="68" selection-start-column="12" selection-end-line="68" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="103-动画模块的连写模式.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/103-动画模块的连写模式.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="512">
-              <caret line="32" column="12" lean-forward="false" selection-start-line="32" selection-start-column="12" selection-end-line="32" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -107,7 +76,7 @@
       <file leaf-file-name="107-3D转换模块-正方体.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/107-3D转换模块-正方体.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="97">
+            <state relative-caret-position="-272">
               <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
               <folding />
             </state>
@@ -117,8 +86,8 @@
       <file leaf-file-name="108-3D转换模块-正方体的终极方案.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/108-3D转换模块-正方体的终极方案.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="66" column="5" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="66" selection-end-column="5" />
+            <state relative-caret-position="832">
+              <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -127,18 +96,28 @@
       <file leaf-file-name="109-3D转换模块-长方形.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/109-3D转换模块-长方形.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="82" column="5" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
+            <state relative-caret-position="112">
+              <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="110-3D转换模块-立体轮播图.html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="110-3D转换模块-立体轮播图.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/110-3D转换模块-立体轮播图.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-640">
-              <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+            <state relative-caret-position="1072">
+              <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="111-3D播放器.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/111-3D播放器.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="528">
+              <caret line="136" column="12" lean-forward="false" selection-start-line="136" selection-start-column="12" selection-end-line="136" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -159,7 +138,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/59-浮动元素脱标.html" />
         <option value="$PROJECT_DIR$/60-浮动元素的排序规则.html" />
         <option value="$PROJECT_DIR$/61-浮动元素的贴靠现象.html" />
         <option value="$PROJECT_DIR$/62-浮动元素的字围现象.html" />
@@ -210,6 +188,7 @@
         <option value="$PROJECT_DIR$/108-3D转换模块-正方体的终极方案.html" />
         <option value="$PROJECT_DIR$/109-3D转换模块-长方形.html" />
         <option value="$PROJECT_DIR$/110-3D转换模块-立体轮播图.html" />
+        <option value="$PROJECT_DIR$/111-3D播放器.html" />
       </list>
     </option>
   </component>
@@ -366,15 +345,15 @@
       <workItem from="1495935136453" duration="5598000" />
       <workItem from="1495962522793" duration="8851000" />
       <workItem from="1496061126308" duration="7730000" />
-      <workItem from="1496129424933" duration="12946000" />
+      <workItem from="1496129424933" duration="17027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94447000" />
+    <option name="totallyTimeSpent" value="98528000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="773" extended-state="1" />
+    <frame x="0" y="23" width="1280" height="773" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2046875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -417,14 +396,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/embed.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/webstorm.jar!/resources/html5-schema/html5/web-forms2.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -740,14 +711,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/107-3D转换模块-正方体.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="97">
-          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/106-3D转换模块.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -756,26 +719,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/108-3D转换模块-正方体的终极方案.html">
+    <entry file="file://$PROJECT_DIR$/107-3D转换模块-正方体.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="66" column="5" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="66" selection-end-column="5" />
+        <state relative-caret-position="-272">
+          <caret line="17" column="41" lean-forward="true" selection-start-line="17" selection-start-column="41" selection-end-line="17" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/109-3D转换模块-长方形.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="82" column="5" lean-forward="true" selection-start-line="5" selection-start-column="4" selection-end-line="82" selection-end-column="5" />
+        <state relative-caret-position="112">
+          <caret line="56" column="9" lean-forward="true" selection-start-line="56" selection-start-column="9" selection-end-line="56" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/108-3D转换模块-正方体的终极方案.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="832">
+          <caret line="52" column="27" lean-forward="true" selection-start-line="52" selection-start-column="27" selection-end-line="52" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/110-3D转换模块-立体轮播图.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-640">
-          <caret line="13" column="11" lean-forward="true" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="11" />
+        <state relative-caret-position="1072">
+          <caret line="67" column="9" lean-forward="true" selection-start-line="67" selection-start-column="9" selection-end-line="67" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/111-3D播放器.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="528">
+          <caret line="136" column="12" lean-forward="false" selection-start-line="136" selection-start-column="12" selection-end-line="136" selection-end-column="12" />
           <folding />
         </state>
       </provider>
