@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>115-多重背景图片.html</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        div{
+            width: 200px;
+            padding: 200px;
+            border: 1px solid #000000;
+            box-sizing: border-box;
+            margin: 0 auto;
+            /*
+            添加多张背景图片,之间用逗号隔开
+            注意点:
+            1, 先添加的背景图片会盖住后天添加的背景图片
+            2, 建议在编写多重背景时拆开来写
+            */
+            /*background: url("Images/dog.png") no-repeat left top, url("Images/dog.png") no-repeat right top;*/
+            background-image: url("Images/dog.png"), url("Images/dog.png");
+            background-repeat: no-repeat, no-repeat;
+            background-position: left top, right top;
+        }
+    </style>
+</head>
+<body>
+<div></div>
+</body>
+</html>

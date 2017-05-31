@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>117-css书写格式.html</title>
+    <!--
+    <style>
+    div{
+        background-color: red;
+    }
+    </style>
+    -->
+    <!-- 推荐 -->
+    <!--<link rel="stylesheet" href="117-css书写格式.css">-->
+    <style>
+        @import "117-css书写格式.css";
+    </style>
+</head>
+<body>
+<!--
+1, 行内样式
+可以直接将css代码写在开始标签中
+
+2, 内嵌样式
+可以在一对head标签中写上一对style标签,然后在style标签中编写css代码
+
+3, 外链样式 -》 企业开发中都是用外链样式
+可以新建一个.css的文件,把css代码吓到这个文件,然后利用link标签把这个文件和.html文件关联起来
+
+4, 导入样式
+可以新建一个.css的文件,把css代码吓到这个文件,然后通过@import把这个文件和.html文件关联起来
+
+外联样式和导入样式额的区别
+1, 外链样式通过link标签关联,而导入样式是通过@import关联的,在css2中提出的兼容
+2, 外链样式,是先显示样式后加载结构的,所以用户首先看到的就是ui样式界面;而导入样式是先加载了结构,后显示样式的,在网络差的情况下,用户不会首先看到ui样式的
+-->
+<div >我是div</div>
+</body>
+</html>
