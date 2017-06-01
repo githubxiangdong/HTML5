@@ -3,18 +3,20 @@
     height: 60px;
     width: 100%;
     background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
 }
 .top .top_in{
     width: 1200px;
     height: 100%;
     margin: 0 auto;
-    /*background-color: yellow;*/
 }
 .top .top_left{
     float: left;
     height: 100%;
     width: 190px;
-    /*background-color: pink;*/
 }
 .top .top_left>h1{
     width: 100%;
@@ -30,13 +32,11 @@
     float: right;
     height: 100%;
     width: 740px;
-    /*background-color: pink;*/
 }
 .top .top_nav{
     float: left;
     width: 550px;
     height: 100%;
-    /*background-color: skyblue;*/
 }
 .top .top_nav>li{
     float: left;
@@ -55,7 +55,6 @@
     float: right;
     width: 150px;
     height: 100%;
-    /*background-color: skyblue;*/
 }
 .top .top_login>li{
     float: right;
@@ -83,7 +82,7 @@
 .banner{
     height: 860px;
     width: 100%;
-    background-color: green;
+    margin-top: 60px;
 }
 .banner .nav_out{
     height: 121px;
@@ -136,7 +135,6 @@
 .banner .figure{
     height: 600px;
     width: 100%;
-    background-color: pink;
     text-align: center;
     overflow: hidden;
     position: relative;
@@ -156,7 +154,6 @@
     float: left;
     width: 8px;
     height: 8px;
-    background-color: #cccccc;
     margin-left: 15px;
     margin-top: 5px;
     border-radius: 50%;
@@ -236,11 +233,159 @@
 .content{
     height: 1883px;
     width: 100%;
-    background-color: blue;
+}
+.content>dl{
+    width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.content>dl>dt{
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.content>dl>dt>h3{
+    font-size: 30px;
+    color: #333333;
+}
+.content>dl>dt>p{
+    color: #e8340e;
+}
+.content .content_phone{
+    width: 1200px;
+    height: 1200px;
+}
+/* 利用贴靠现象排版*/
+.content .content_phone>li{
+    float: left;
+    background-color: white;
+    position: relative;
+    overflow: hidden;
+}
+.content .content_phone>li:nth-child(1){
+    width: 1200px;
+    height: 395px;
+    margin-bottom: 10px;
+}
+.content .content_phone>li:nth-child(2){
+    width: 395px;
+    height: 795px;
+    margin-right: 10px;
+}
+.content .content_phone>li:nth-child(3){
+    width: 795px;
+    height: 390px;
+    margin-bottom: 10px;
+}
+.content .content_phone>li:nth-child(4){
+    width: 390px;
+    height: 395px;
+    margin-right: 10px;
+}
+.content .content_phone>li:nth-child(5){
+    width: 395px;
+    height: 395px;
+}
+.content .content_phone>li>img{
+    width: 100%;
+}
+.content .content_phone>li:nth-child(1) img{
+    margin-top: 80px;
+    margin-left: -15px;
+    transition: all 1s;
+}
+.content .content_phone>li:nth-child(1):hover img{
+    margin-left: 30px;
+}
+.content .content_phone>li:nth-child(3) img{
+    margin-left: 25px;
+    transition: all 1s;
+}
+.content .content_phone>li:nth-child(3):hover img{
+    margin-left: 0px;
+}
+
+.content .content_phone>li .img_scale{
+    transform: scale(1);
+    transition: all 1s;
+}
+.content .content_phone>li:hover .img_scale{
+    transform: scale(1.1);
+}
+
+.content .content_phone .phone_description{
+    width: 200px;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    margin-left: -100px;
+    bottom: 15px;
+    text-align: center;
+}
+.content .content_phone>li:nth-child(1) .phone_description{
+    margin-left: 300px;
+    margin-bottom: 120px;
+}
+.content .content_phone>li:nth-child(4) .phone_description{
+    height: 55px;
+}
+.content .content_phone>li:nth-child(5) .phone_description{
+    height: 55px;
+}
+.content .content_phone .phone_description>h4{
+    font-size: 20px;
+    color: #000000;
+}
+.content .content_phone .phone_description>p{
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+.content .content_phone .phone_description>span{
+    display: inline-block;
+    width: 108px;
+    height: 28px;
+    text-align: center;
+    line-height: 28px;
+    border: 1px solid #cccccc;
+    box-sizing: border-box;
+    border-radius: 3px;
+    color: #000000;
+}
+.content .content_accessories{
+    width: 1200px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+}
+.content .content_accessories>li{
+    float: left;
+    width: 295px;
+    height: 300px;
+    background-color: white;
+    overflow: hidden;
+    position: relative;
+}
+.content .content_accessories>li>img{
+    width: 100%;
+    transform: scale(1);
+    transition: all 1s;
+}
+.content .content_accessories>li>p{
+    font-size: 14px;
+    width: 100px;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    z-index: 998;
+}
+.content .content_accessories>li:hover img{
+    transform: scale(1.1);
 }
 /*底部区域*/
 .footer{
-    height: 396px;
+    height: 1px;
     width: 100%;
     background-color: yellow;
 }
